@@ -1,0 +1,112 @@
+.thumbnail{
+    width: 100%;
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.video-link{
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.profile-picture{
+    width: 36px;
+    border-radius: 50px;
+}
+.channel-tooltip{
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 0px 5px rgba(97, 97, 97, 0.8);
+    border-radius: 10px;
+    width: 210px;
+    height: 70px;
+    font-family: Roboto, Arial;
+    position: relative;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.channel-image{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.channel-image img{
+    width: 50px;
+    border-radius: 25px;
+}
+.creator{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.subscribers-channel{
+    color: grey;
+    margin-top: 7px;
+    font-size: 13px;
+}
+.channel-picture:hover .channel-tooltip{
+    opacity: 1;
+}
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 0;
+}
+.video-author,
+.video-stats{
+    font-size: 12px;
+    color: rgb(96,96,96);
+}
+.video-author{
+    margin-bottom: 4px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media(max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media(min-width:1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .video-author,
+    .video-stats{
+        font-size: 14px;
+    }
+}
+
+.video-time{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}

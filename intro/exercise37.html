@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercise 37</title>
+        <style>
+            .shop-image{
+                position: relative;
+                display: inline-block;
+            }
+            .img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .discount{
+                background-color: black;
+                color: white;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                font-family: Arial;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 12px;
+            }
+            .container{
+                background-color: rgba(255, 255, 255, 0.8);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                height: 80px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            button{
+                border-style: solid;
+                border-width: 1px;
+                background-color: rgb(255,255,255);
+                border-color: black;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="shop-image">
+            <img class="img" src="/thumbnails/image.png">
+            <div class="discount">20% OFF</div>
+            <div class="container">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>

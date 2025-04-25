@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercise 27</title>
+        <style>
+            .flex-1{
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+            .col-1{
+                width: 100px;
+                background-color: lightpink;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .item-style{
+                background-color: black;
+                color: white;
+            }
+            .col-2{
+                width: 200px;
+                background-color: lightblue;
+            }
+            .row-2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .row2-item{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-1">
+            <div class="col-1">
+                <div class="item-style">
+                        item 1
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="flex-1">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <div>row1</div>
+                <div class="row-2">
+                    <div class="row2-item">row2</div>
+                    <div class="row2-item">row2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

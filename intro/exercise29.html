@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercise 28</title>
+        <style>
+            div{
+                font-family: Arial;
+            }
+            .class-1{
+                display: flex;
+                width: 450px;
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+            .img{
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                object-fit: cover;
+                object-position: center;
+                margin-right: 20px;
+            }
+            span{
+                color: grey;
+            }
+            .title{
+                margin-bottom: 10px;
+            }
+            .desc{
+                margin-bottom: 10px;
+            }
+            .video-preview{
+                display: flex;
+                align-items: center;
+                border-style: solid;
+                border-color: rgb(190, 190, 190);
+                border-radius: 15px;
+                overflow: hidden;
+                border-width: 1px;
+
+            }
+            .video{
+                background-color: rgb(190, 190, 190);
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+            }
+            .video-link{
+                flex: 1;
+            }
+            .video-site{
+                color: grey;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="class-1">
+            <div>
+                <img class="img" src="/thumbnails/images-1.jpg" alt="">
+            </div>
+            <div>
+                <div class="title"><strong>supersimple.dev</strong> <span>@SuperSimpleDev</span></div>
+                <div class="desc">What is backend web development? A complete overview. New video is up!</div>
+                <div class="video-preview">
+                    <div class="video"></div>
+                    <div class="video-link">
+                        <div class="video-site">youtube.com</div>
+                        <div>Backend web development - a complete overview (2021)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
